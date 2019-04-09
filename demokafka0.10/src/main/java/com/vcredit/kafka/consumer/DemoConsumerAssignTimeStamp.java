@@ -14,7 +14,7 @@ import org.apache.kafka.common.serialization.StringDeserializer;
 
 public class DemoConsumerAssignTimeStamp {
     public static void main(String[] args) {
-        args = new String[]{"hadoop2:9092,hadoop3:9092", "topic2", "group3", "consumer1"};
+        args = new String[]{"hadoop2:9092,hadoop3:9092", "JXL_INS", "group3", "consumer1"};
         if (args == null || args.length != 4) {
             System.err.println(
                     "Usage:\n\tjava -jar kafka_consumer.jar ${bootstrap_server} ${topic_name} ${group_name} ${client_id}");
